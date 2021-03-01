@@ -9,7 +9,7 @@ defmodule Rocketpay.Repo.Migrations.CreateUserTable do
       add :password_hash, :string
       add :nickname, :string
 
-      # timestamps()
+      timestamps()
     end
 
     create unique_index(:users, [:email])
