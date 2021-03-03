@@ -23,4 +23,3 @@ defmodule RocketpayWeb.UsersView do
     }
   end
 end
-# 50:30
