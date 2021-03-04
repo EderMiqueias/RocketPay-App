@@ -13,14 +13,18 @@ config :rocketpay,
 # Configures the endpoint
 config :rocketpay, RocketpayWeb.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "A1299pZPHCH862PCfKhrS6VopaGBaQGfQyGh0UFxu9x9nQySzjI0xMG2Zr1bIzIr",
+  secret_key_base: "301cvOG8/4xHG29TQ899cfWEbKPpdHBY3+up0wMmAPbP5+RT9XHcgqX5AGObqLpe",
   render_errors: [view: RocketpayWeb.ErrorView, accepts: ~w(json), layout: false],
   pubsub_server: Rocketpay.PubSub,
-  live_view: [signing_salt: "wKO33evw"]
+  live_view: [signing_salt: "IT2ylQgY"]
 
 config :rocketpay, Rocketpay.Repo,
   migration_primary_key: [type: :binary_id],
   migration_foreign_key: [type: :binary_id]
+
+config :rocketpay, :basic_auth,
+  username: "slim",
+  password: "irineu"
 
 # Configures Elixir's Logger
 config :logger, :console,

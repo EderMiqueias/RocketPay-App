@@ -2,7 +2,7 @@ defmodule Rocketpay.Accounts.Transaction do
   alias Ecto.Multi
 
   alias Rocketpay.Accounts.Operation
-  alias Rocketpay.Accounts.Transaction.Response, as: TransactionResponse
+  alias Rocketpay.Accounts.Transactions.Response, as: TransactionResponse
   alias Rocketpay.Repo
 
   def call (%{"from" => from_id, "to" => to_id, "value" => value}) do
